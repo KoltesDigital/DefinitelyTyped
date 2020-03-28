@@ -28,7 +28,7 @@ declare namespace convict {
 
     interface Format {
         name?: string;
-        validate?(val: any): void;
+        validate?(val: any, schemaObj: any): void;
         coerce?(val: any): any;
     }
 
